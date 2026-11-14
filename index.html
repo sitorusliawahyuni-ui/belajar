@@ -1,1 +1,763 @@
-simbol_simbol_pancasila_dan_maknanya%20(1).html
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simbol-Simbol Pancasila dan Maknanya - Media Edukasi Interaktif</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        garuda: {
+                            gold: '#D97706',
+                            lightGold: '#FBBF24',
+                            darkGold: '#92400E',
+                            red: '#DC2626',
+                            darkRed: '#991B1B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Animasi halus untuk modal dan elemen interaktif */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-modal {
+            animation: fadeIn 0.25s ease-out forwards;
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-200 selection:text-amber-900">
+
+    <!-- Navbar Navigasi -->
+    <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-red-600 to-amber-500 flex items-center justify-center text-white font-bold shadow">
+                        🇮🇩
+                    </div>
+                    <span class="font-display font-bold text-lg text-slate-900 tracking-tight">EduPancasila</span>
+                </div>
+                <div class="hidden sm:flex items-center space-x-6 text-sm font-medium text-slate-600">
+                    <a href="#beranda" class="hover:text-red-600 transition-colors">Beranda</a>
+                    <a href="#materi-sila" class="hover:text-red-600 transition-colors">5 Sila & Simbol</a>
+                    <a href="#kuis-interaktif" class="px-4 py-2 rounded-full bg-red-600 text-white hover:bg-red-700 transition-colors shadow-sm">Mulai Kuis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. BAGIAN HEADER / HERO SECTION -->
+    <header id="beranda" class="relative overflow-hidden bg-gradient-to-b from-amber-50 via-white to-slate-50 pt-10 pb-16 sm:pt-16 sm:pb-24 border-b border-slate-200/60">
+        <!-- Dekorasi Latar Belakang -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-full opacity-30 pointer-events-none">
+            <div class="absolute top-10 left-10 w-64 h-64 bg-amber-300 rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute top-10 right-10 w-64 h-64 bg-red-300 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <!-- Teks Header -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-100 text-amber-800 border border-amber-200 mb-5">
+                        <span class="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+                        Pendidikan Pancasila & Kewarganegaraan
+                    </span>
+                    <h1 class="font-display text-3xl sm:text-5xl font-extrabold text-slate-900 leading-tight mb-5">
+                        Simbol-Simbol <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-600">Pancasila</span> dan Maknanya
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Pelajari makna mendalam di balik lima simbol pada perisai Burung Garuda Pancasila. Pahami nilai-nilai luhur bangsa dan bagaimana menerapkannya dalam kehidupan sehari-hari.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#materi-sila" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/20 text-center">
+                            Jelajahi 5 Simbol Sila
+                        </a>
+                        <a href="#kuis-interaktif" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white text-slate-800 font-semibold border border-slate-300 hover:bg-slate-50 transition-all text-center">
+                            Uji Pemahaman (Kuis)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ilustrasi SVG Burung Garuda & Perisai Pancasila -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 bg-white rounded-3xl shadow-xl border border-amber-100 p-6 flex flex-col items-center justify-center">
+                        <!-- SVG Ilustrasi Garuda & Perisai -->
+                        <svg viewBox="0 0 240 240" class="w-full h-full drop-shadow-md" aria-label="Ilustrasi Garuda dan Perisai Pancasila">
+                            <defs>
+                                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FBBF24"/>
+                                    <stop offset="50%" stop-color="#D97706"/>
+                                    <stop offset="100%" stop-color="#92400E"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Sayap Garuda Stilasi -->
+                            <path d="M120 45 C85 35, 30 50, 15 85 C35 82, 55 88, 65 95 C40 98, 25 110, 20 125 C42 120, 62 122, 72 128 C52 135, 40 148, 38 162 C60 154, 78 152, 90 155 L120 185 L150 155 C162 152, 180 154, 202 162 C200 148, 188 135, 168 128 C178 122, 198 120, 220 125 C215 110, 200 98, 175 95 C185 88, 205 82, 225 85 C210 50, 155 35, 120 45 Z" fill="url(#goldGrad)"/>
+                            <!-- Kepala Garuda -->
+                            <path d="M112 45 C112 28, 126 22, 136 28 C142 32, 140 38, 134 40 C138 43, 134 48, 128 48 L128 56 L112 56 Z" fill="#B45309"/>
+                            <!-- Ekor Garuda -->
+                            <path d="M102 175 L120 212 L138 175 Z" fill="#B45309"/>
+                            <!-- Pita Bhinneka Tunggal Ika -->
+                            <path d="M62 188 Q120 205 178 188 L173 203 Q120 220 67 203 Z" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+                            <text x="120" y="201" font-size="7.5" font-weight="800" fill="#1E293B" text-anchor="middle" font-family="sans-serif">BHINNEKA TUNGGAL IKA</text>
+                            
+                            <!-- Perisai Pancasila di Tengah -->
+                            <path d="M84 68 L156 68 L156 125 C156 152, 120 172, 120 172 C120 172, 84 152, 84 125 Z" fill="#FFFFFF" stroke="#1E293B" stroke-width="3.5"/>
+                            <!-- Kuadran Kiri Atas (Sila 4 - Merah) -->
+                            <path d="M86 70 L120 70 L120 112 L86 112 Z" fill="#DC2626"/>
+                            <!-- Kuadran Kanan Atas (Sila 3 - Putih) -->
+                            <path d="M120 70 L154 70 L154 112 L120 112 Z" fill="#FFFFFF"/>
+                            <!-- Kuadran Kiri Bawah (Sila 5 - Putih) -->
+                            <path d="M86 112 L120 112 L120 170 C102 160, 86 142, 86 125 Z" fill="#FFFFFF"/>
+                            <!-- Kuadran Kanan Bawah (Sila 2 - Merah) -->
+                            <path d="M120 112 L154 112 L154 125 C154 142, 138 160, 120 170 Z" fill="#DC2626"/>
+                            <!-- Garis Khatulistiwa -->
+                            <line x1="84" y1="112" x2="156" y2="112" stroke="#1E293B" stroke-width="3.5"/>
+                            <line x1="120" y1="68" x2="120" y2="172" stroke="#1E293B" stroke-width="2"/>
+                            <!-- Perisai Tengah (Sila 1 - Hitam & Bintang Emas) -->
+                            <path d="M106 94 L134 94 L134 118 C134 128, 120 135, 120 135 C120 135, 106 128, 106 118 Z" fill="#0F172A" stroke="#FBBF24" stroke-width="1.5"/>
+                            <polygon points="120,101 123,109 131,109 124.5,114 127,122 120,117 113,122 115.5,114 109,109 117,109" fill="#FBBF24"/>
+                        </svg>
+                        <p class="text-xs font-semibold text-slate-500 mt-2 text-center">Garuda Pancasila & Perisai 5 Sila</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. BAGIAN 5 SILA PANCASILA (KARTU INTERAKTIF) -->
+    <main id="materi-sila" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="font-display text-2xl sm:text-3xl font-bold text-slate-900 mb-3">
+                Mengenal 5 Simbol Pada Perisai Pancasila
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base">
+                Klik salah satu kartu sila di bawah ini untuk membaca makna filosofis secara mendalam dan contoh penerapannya dalam kehidupan sehari-hari.
+            </p>
+        </div>
+
+        <!-- Grid Kartu 5 Sila (Di-render via JavaScript agar rapi dan interaktif) -->
+        <div id="sila-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Kartu akan dimuat oleh JavaScript -->
+        </div>
+    </main>
+
+    <!-- MODAL DETAIL SILA (Muncul saat kartu diklik) -->
+    <div id="sila-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm" role="dialog" aria-modal="true">
+        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 animate-modal">
+            <!-- Header Modal -->
+            <div id="modal-header" class="p-6 sm:p-8 border-b border-slate-100 flex items-start justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <div id="modal-icon-container" class="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 shadow-inner">
+                        <!-- SVG Icon -->
+                    </div>
+                    <div>
+                        <span id="modal-badge" class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-1">
+                            Sila Ke-1
+                        </span>
+                        <h3 id="modal-title" class="font-display text-xl sm:text-2xl font-bold text-slate-900">
+                            Ketuhanan Yang Maha Esa
+                        </h3>
+                        <p id="modal-symbol-name" class="text-sm font-medium text-slate-500">
+                            Simbol: Bintang Tunggal
+                        </p>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="p-2 rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Tutup modal">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Tab Navigasi di dalam Modal -->
+            <div class="flex border-b border-slate-200 px-6 sm:px-8 bg-slate-50/60">
+                <button id="tab-btn-makna" onclick="switchModalTab('makna')" class="py-3.5 px-4 text-sm font-semibold border-b-2 border-red-600 text-red-600 transition-colors">
+                    Makna Filosofis Simbol
+                </button>
+                <button id="tab-btn-penerapan" onclick="switchModalTab('penerapan')" class="py-3.5 px-4 text-sm font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-800 transition-colors">
+                    Contoh Penerapan Sehari-hari
+                </button>
+            </div>
+
+            <!-- Konten Modal -->
+            <div class="p-6 sm:p-8">
+                <!-- Tab 1: Makna Filosofis -->
+                <div id="tab-content-makna" class="space-y-4">
+                    <div class="bg-amber-50/70 border border-amber-200/80 rounded-2xl p-5">
+                        <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide mb-2 flex items-center gap-2">
+                            <span>💡</span> Filosofi Bentuk & Warna
+                        </h4>
+                        <p id="modal-philosophy" class="text-slate-700 leading-relaxed text-sm sm:text-base">
+                            <!-- Teks filosofi -->
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Contoh Penerapan -->
+                <div id="tab-content-penerapan" class="hidden space-y-3">
+                    <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide mb-3">
+                        Sikap Positif yang Dapat Diterapkan:
+                    </h4>
+                    <ul id="modal-examples" class="space-y-3">
+                        <!-- List contoh penerapan -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Modal -->
+            <div class="px-6 sm:px-8 py-4 bg-slate-50 border-t border-slate-100 flex justify-between items-center">
+                <button id="prev-sila-btn" onclick="navigateModal(-1)" class="text-sm font-semibold text-slate-600 hover:text-slate-900 flex items-center gap-1">
+                    ← Sila Sebelumnya
+                </button>
+                <button onclick="closeModal()" class="px-5 py-2 rounded-xl bg-slate-900 text-white text-sm font-semibold hover:bg-slate-800 transition-colors">
+                    Selesai Membaca
+                </button>
+                <button id="next-sila-btn" onclick="navigateModal(1)" class="text-sm font-semibold text-slate-600 hover:text-slate-900 flex items-center gap-1">
+                    Sila Berikutnya →
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. BAGIAN KUIS MINI INTERAKTIF -->
+    <section id="kuis-interaktif" class="bg-slate-900 text-white py-16 sm:py-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-3">
+                    EVALUASI BELAJAR
+                </span>
+                <h2 class="font-display text-2xl sm:text-3xl font-bold mb-3">
+                    Kuis Mini Interaktif Pancasila
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Uji sejauh mana pemahamanmu tentang simbol-simbol Pancasila dan penerapannya!
+                </p>
+            </div>
+
+            <!-- Kontainer Kuis -->
+            <div class="bg-slate-800/90 border border-slate-700 rounded-3xl p-6 sm:p-8 shadow-2xl">
+                <!-- Tampilan Soal Aktif -->
+                <div id="quiz-active-view">
+                    <!-- Progress & Skor Langsung -->
+                    <div class="flex flex-wrap justify-between items-center gap-4 pb-6 mb-6 border-b border-slate-700">
+                        <div>
+                            <span id="quiz-progress-text" class="text-sm font-semibold text-amber-400">Pertanyaan 1 dari 5</span>
+                            <div class="w-40 sm:w-56 h-2 bg-slate-700 rounded-full mt-2 overflow-hidden">
+                                <div id="quiz-progress-bar" class="h-full bg-gradient-to-r from-red-500 to-amber-400 transition-all duration-300" style="width: 20%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-900/80 px-4 py-2 rounded-xl border border-slate-700 flex items-center gap-2">
+                            <span class="text-xs text-slate-400">Skor Saat Ini:</span>
+                            <span id="live-score" class="text-lg font-extrabold text-emerald-400">0</span>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan -->
+                    <h3 id="quiz-question" class="text-lg sm:text-xl font-bold text-white leading-snug mb-6">
+                        Memuat pertanyaan...
+                    </h3>
+
+                    <!-- Pilihan Jawaban -->
+                    <div id="quiz-options" class="space-y-3 mb-6">
+                        <!-- Tombol opsi jawaban -->
+                    </div>
+
+                    <!-- Feedback Jawaban Langsung -->
+                    <div id="quiz-feedback" class="hidden p-4 rounded-2xl mb-6 text-sm leading-relaxed">
+                        <!-- Pesan benar/salah + penjelasan singkat -->
+                    </div>
+
+                    <!-- Tombol Lanjut -->
+                    <div class="flex justify-end">
+                        <button id="quiz-next-btn" onclick="nextQuestion()" class="hidden px-6 py-3 rounded-xl bg-amber-500 text-slate-950 font-bold hover:bg-amber-400 transition-all shadow-lg">
+                            Pertanyaan Selanjutnya →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tampilan Hasil Akhir Kuis -->
+                <div id="quiz-result-view" class="hidden text-center py-6">
+                    <div id="result-emoji" class="text-6xl mb-4">🏆</div>
+                    <h3 class="font-display text-2xl sm:text-3xl font-bold mb-2">Kuis Selesai!</h3>
+                    <p id="result-message" class="text-slate-300 mb-6 max-w-md mx-auto">
+                        Hebat! Kamu telah menyelesaikan seluruh pertanyaan dengan baik.
+                    </p>
+                    <div class="inline-block bg-slate-900 border border-slate-700 rounded-2xl px-8 py-5 mb-8">
+                        <span class="block text-xs uppercase tracking-wider text-slate-400 mb-1">Skor Akhir Kamu</span>
+                        <span id="final-score" class="text-4xl sm:text-5xl font-extrabold text-amber-400">100</span>
+                        <span class="text-slate-400 text-lg font-semibold"> / 100</span>
+                    </div>
+                    <div>
+                        <button onclick="restartQuiz()" class="px-6 py-3.5 rounded-xl bg-red-600 text-white font-semibold hover:bg-red-700 transition-colors shadow-lg">
+                            Ulangi Kuis Lagi
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="font-medium text-slate-700 mb-1">EduPancasila — Media Pembelajaran Interaktif Pelajar Indonesia</p>
+            <p>Mari amalkan nilai-nilai luhur Pancasila dalam kehidupan bermasyarakat, berbangsa, dan bernegara.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIKA INTERAKTIF -->
+    <script>
+        // 1. DATA MATERI 5 SILA PANCASILA & SIMBOLNYA
+        const pancasilaData = [
+            {
+                id: 1,
+                silaNumber: "Sila Ke-1",
+                bunyi: "Ketuhanan Yang Maha Esa",
+                simbol: "Bintang Tunggal",
+                bgBadge: "bg-amber-100 text-amber-800",
+                bgIcon: "bg-slate-900",
+                borderHover: "hover:border-amber-400",
+                ringkasan: "Melambangkan cahaya kerohanian yang dipancarkan Tuhan Yang Maha Esa kepada seluruh umat manusia.",
+                filosofi: "Simbol bintang bersudut lima berwarna kuning emas di atas perisai hitam melambangkan cahaya kerohanian dari Tuhan Yang Maha Esa bagi setiap manusia. Latar belakang warna hitam melambangkan warna alam atau warna asli yang menunjukkan bahwa Tuhan adalah sumber dari segala sesuatu yang ada di dunia ini.",
+                penerapan: [
+                    "Beriman dan bertakwa kepada Tuhan Yang Maha Esa sesuai agama dan kepercayaan masing-masing.",
+                    "Menghormati teman atau tetangga yang berbeda agama serta tidak mengganggu jalannya ibadah mereka.",
+                    "Menjaga kerukunan antarumat beragama di lingkungan sekolah maupun masyarakat.",
+                    "Tidak memaksakan suatu agama atau kepercayaan kepada orang lain."
+                ],
+                svg: `
+                    <svg viewBox="0 0 100 100" class="w-12 h-12">
+                        <polygon points="50,12 61,38 89,38 66,55 75,82 50,65 25,82 34,55 11,38 39,38" fill="#FBBF24" stroke="#F59E0B" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                `
+            },
+            {
+                id: 2,
+                silaNumber: "Sila Ke-2",
+                bunyi: "Kemanusiaan yang Adil dan Beradab",
+                simbol: "Rantai Emas",
+                bgBadge: "bg-red-100 text-red-800",
+                bgIcon: "bg-red-600",
+                borderHover: "hover:border-red-400",
+                ringkasan: "Melambangkan hubungan antarmanusia yang saling membantu, setara, dan terikat erat tanpa putus.",
+                filosofi: "Rantai emas yang saling berkaitan terdiri atas mata rantai berbentuk persegi (melambangkan laki-laki) dan lingkaran (melambangkan perempuan). Keterkaitan mata rantai yang tidak terputus melambangkan bahwa setiap manusia, baik laki-laki maupun perempuan, saling membutuhkan dan perlu bersatu agar menjadi kuat seperti rantai.",
+                penerapan: [
+                    "Mengakui persamaan derajat, hak, dan kewajiban asasi setiap manusia tanpa membeda-bedakan suku atau keturunan.",
+                    "Saling mencintai, menghormati, dan membantu sesama yang sedang mengalami kesulitan atau bencana.",
+                    "Menjunjung tinggi sikap tenggang rasa dan tidak berbuat semena-mena kepada teman.",
+                    "Berani membela kebenaran dan keadilan di lingkungan sekitar."
+                ],
+                svg: `
+                    <svg viewBox="0 0 100 100" class="w-12 h-12">
+                        <rect x="20" y="36" width="28" height="28" rx="6" fill="none" stroke="#FBBF24" stroke-width="7"/>
+                        <circle cx="52" cy="50" r="14" fill="none" stroke="#FDE047" stroke-width="7"/>
+                        <rect x="56" y="36" width="28" height="28" rx="6" fill="none" stroke="#FBBF24" stroke-width="7"/>
+                    </svg>
+                `
+            },
+            {
+                id: 3,
+                silaNumber: "Sila Ke-3",
+                bunyi: "Persatuan Indonesia",
+                simbol: "Pohon Beringin",
+                bgBadge: "bg-emerald-100 text-emerald-800",
+                bgIcon: "bg-emerald-50 border border-emerald-200",
+                borderHover: "hover:border-emerald-400",
+                ringkasan: "Melambangkan negara Indonesia sebagai tempat berteduh yang kokoh bagi seluruh rakyat yang beragam.",
+                filosofi: "Pohon beringin merupakan pohon besar yang memiliki daun rindang sebagai tempat berteduh yang nyaman. Hal ini melambangkan Negara Kesatuan Republik Indonesia menjadi tempat bernaung bagi seluruh rakyatnya. Akar tunggang yang kuat dan akar gantung yang menjalar melambangkan keragaman suku, budaya, dan bahasa yang menyatu di bawah nama Indonesia.",
+                penerapan: [
+                    "Cinta tanah air dan bangsa dengan bangga menggunakan produk dalam negeri serta melestarikan budaya daerah.",
+                    "Menjaga persatuan dan kesatuan di sekolah dengan berteman tanpa memandang latar belakang daerah.",
+                    "Rela berkorban demi kepentingan bangsa dan negara di atas kepentingan pribadi atau golongan.",
+                    "Mengutamakan kerukunan dan menghindari perpecahan atau perundungan (bullying)."
+                ],
+                svg: `
+                    <svg viewBox="0 0 100 100" class="w-12 h-12">
+                        <path d="M43 60 L43 85 L57 85 L57 60 Z" fill="#78350F"/>
+                        <path d="M35 60 Q32 75 28 83 M65 60 Q68 75 72 83" stroke="#92400E" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <path d="M22 58 C12 58, 12 40, 24 37 C22 22, 38 14, 50 18 C62 14, 78 22, 76 37 C88 40, 88 58, 78 58 Z" fill="#15803D"/>
+                        <path d="M30 50 C25 42, 35 28, 50 28 C65 28, 75 42, 70 50 Z" fill="#22C55E"/>
+                    </svg>
+                `
+            },
+            {
+                id: 4,
+                silaNumber: "Sila Ke-4",
+                bunyi: "Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan",
+                simbol: "Kepala Banteng",
+                bgBadge: "bg-rose-100 text-rose-800",
+                bgIcon: "bg-red-700",
+                borderHover: "hover:border-rose-400",
+                ringkasan: "Melambangkan masyarakat yang gemar berkumpul, bermusyawarah, dan berdiskusi mengambil keputusan.",
+                filosofi: "Banteng dikenal sebagai hewan sosial yang kuat dan suka berkumpul dalam kelompok. Filosofi ini menggambarkan rakyat Indonesia yang gemar berkumpul untuk bermusyawarah dan berdiskusi guna mencapai mufakat dalam menyelesaikan suatu persoalan bersama secara bijaksana.",
+                penerapan: [
+                    "Mengutamakan musyawarah untuk mencapai mufakat dalam mengambil keputusan bersama (seperti pemilihan ketua kelas).",
+                    "Menghargai pendapat orang lain saat berdiskusi dan tidak memaksakan kehendak pribadi.",
+                    "Menerima dan melaksanakan hasil keputusan musyawarah dengan penuh tanggung jawab dan lapang dada.",
+                    "Menggunakan hak pilih secara bijak dalam pemilihan umum atau organisasi."
+                ],
+                svg: `
+                    <svg viewBox="0 0 100 100" class="w-12 h-12">
+                        <!-- Tanduk -->
+                        <path d="M28 42 C14 38, 12 20, 24 16 C20 26, 24 32, 34 34 Z" fill="#F8FAFC"/>
+                        <path d="M72 42 C86 38, 88 20, 76 16 C80 26, 76 32, 66 34 Z" fill="#F8FAFC"/>
+                        <!-- Kepala Banteng -->
+                        <path d="M32 34 L68 34 L72 56 L60 78 L40 78 L28 56 Z" fill="#1E293B"/>
+                        <!-- Moncong -->
+                        <rect x="39" y="62" width="22" height="14" rx="5" fill="#475569"/>
+                        <circle cx="45" cy="69" r="2" fill="#0F172A"/>
+                        <circle cx="55" cy="69" r="2" fill="#0F172A"/>
+                        <!-- Mata -->
+                        <circle cx="38" cy="48" r="3" fill="#FBBF24"/>
+                        <circle cx="62" cy="48" r="3" fill="#FBBF24"/>
+                    </svg>
+                `
+            },
+            {
+                id: 5,
+                silaNumber: "Sila Ke-5",
+                bunyi: "Keadilan Sosial bagi Seluruh Rakyat Indonesia",
+                simbol: "Padi dan Kapas",
+                bgBadge: "bg-sky-100 text-sky-800",
+                bgIcon: "bg-amber-50 border border-amber-200",
+                borderHover: "hover:border-sky-400",
+                ringkasan: "Melambangkan kebutuhan dasar manusia yaitu pangan (padi) dan sandang (kapas) untuk kemakmuran merata.",
+                filosofi: "Padi melambangkan makanan pokok (pangan) dan kapas melambangkan bahan pembuat pakaian (sandang). Keduanya merupakan kebutuhan dasar setiap manusia agar dapat hidup layak. Simbol ini bermakna bahwa tujuan bangsa Indonesia adalah tercapainya kemakmuran dan kesejahteraan yang adil serta merata bagi seluruh rakyat tanpa terkecuali.",
+                penerapan: [
+                    "Bersikap adil terhadap sesama teman tanpa pilih kasih.",
+                    "Menghormati hak-hak orang lain serta menyeimbangkan antara hak dan kewajiban.",
+                    "Hidup hemat, tidak bergaya hidup mewah/boros, dan suka bekerja keras.",
+                    "Menjaga fasilitas umum dan gemar menolong sesama agar tercipta kesejahteraan bersama."
+                ],
+                svg: `
+                    <svg viewBox="0 0 100 100" class="w-12 h-12">
+                        <!-- Tangkai Padi (Kiri) -->
+                        <path d="M45 82 Q28 55 38 22" stroke="#D97706" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <ellipse cx="33" cy="30" rx="4" ry="7" transform="rotate(-30 33 30)" fill="#FBBF24"/>
+                        <ellipse cx="42" cy="34" rx="4" ry="7" transform="rotate(25 42 34)" fill="#FBBF24"/>
+                        <ellipse cx="30" cy="44" rx="4" ry="7" transform="rotate(-30 30 44)" fill="#FBBF24"/>
+                        <ellipse cx="40" cy="48" rx="4" ry="7" transform="rotate(25 40 48)" fill="#FBBF24"/>
+                        <ellipse cx="32" cy="58" rx="4" ry="7" transform="rotate(-25 32 58)" fill="#FBBF24"/>
+                        <!-- Tangkai Kapas (Kanan) -->
+                        <path d="M55 82 Q72 55 62 24" stroke="#15803D" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <circle cx="64" cy="28" r="7" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+                        <circle cx="70" cy="42" r="7" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+                        <circle cx="58" cy="46" r="7" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+                        <circle cx="66" cy="60" r="7" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+                    </svg>
+                `
+            }
+        ];
+
+        // 2. RENDER KARTU 5 SILA KE DALAM GRID
+        const silaGrid = document.getElementById('sila-grid');
+        
+        function renderSilaCards() {
+            silaGrid.innerHTML = pancasilaData.map((item, index) => `
+                <article onclick="openModal(${index})" 
+                    class="group cursor-pointer bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-xl ${item.borderHover} card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="px-3.5 py-1 rounded-full text-xs font-bold ${item.bgBadge}">
+                                ${item.silaNumber}
+                            </span>
+                            <div class="w-14 h-14 rounded-2xl ${item.bgIcon} flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                ${item.svg}
+                            </div>
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">
+                            Simbol: <span class="text-slate-700">${item.simbol}</span>
+                        </p>
+                        <h3 class="font-display text-lg sm:text-xl font-bold text-slate-900 mb-3 leading-snug group-hover:text-red-600 transition-colors">
+                            "${item.bunyi}"
+                        </h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            ${item.ringkasan}
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-sm font-semibold text-red-600">
+                        <span>Lihat Makna & Penerapan</span>
+                        <span class="group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        // 3. LOGIKA MODAL DETAIL & TAB
+        let currentModalIndex = 0;
+        const modal = document.getElementById('sila-modal');
+
+        function openModal(index) {
+            currentModalIndex = index;
+            const data = pancasilaData[index];
+
+            document.getElementById('modal-badge').className = `inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-1 ${data.bgBadge}`;
+            document.getElementById('modal-badge').textContent = data.silaNumber;
+            document.getElementById('modal-title').textContent = data.bunyi;
+            document.getElementById('modal-symbol-name').textContent = `Simbol: ${data.simbol}`;
+            
+            const iconBox = document.getElementById('modal-icon-container');
+            iconBox.className = `w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 shadow-inner ${data.bgIcon}`;
+            iconBox.innerHTML = data.svg;
+
+            document.getElementById('modal-philosophy').textContent = data.filosofi;
+            document.getElementById('modal-examples').innerHTML = data.penerapan.map(contoh => `
+                <li class="flex items-start gap-3 bg-slate-50 p-3.5 rounded-xl border border-slate-200/70">
+                    <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                    <span class="text-sm sm:text-base text-slate-700">${contoh}</span>
+                </li>
+            `).join('');
+
+            // Reset tab ke 'makna' setiap kali dibuka
+            switchModalTab('makna');
+
+            // Atur tombol navigasi sebelumnya/berikutnya
+            document.getElementById('prev-sila-btn').style.visibility = index === 0 ? 'hidden' : 'visible';
+            document.getElementById('next-sila-btn').style.visibility = index === pancasilaData.length - 1 ? 'hidden' : 'visible';
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        function navigateModal(direction) {
+            const newIndex = currentModalIndex + direction;
+            if (newIndex >= 0 && newIndex < pancasilaData.length) {
+                openModal(newIndex);
+            }
+        }
+
+        function switchModalTab(tabName) {
+            const btnMakna = document.getElementById('tab-btn-makna');
+            const btnPenerapan = document.getElementById('tab-btn-penerapan');
+            const contentMakna = document.getElementById('tab-content-makna');
+            const contentPenerapan = document.getElementById('tab-content-penerapan');
+
+            if (tabName === 'makna') {
+                btnMakna.className = "py-3.5 px-4 text-sm font-semibold border-b-2 border-red-600 text-red-600 transition-colors";
+                btnPenerapan.className = "py-3.5 px-4 text-sm font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-800 transition-colors";
+                contentMakna.classList.remove('hidden');
+                contentPenerapan.classList.add('hidden');
+            } else {
+                btnPenerapan.className = "py-3.5 px-4 text-sm font-semibold border-b-2 border-red-600 text-red-600 transition-colors";
+                btnMakna.className = "py-3.5 px-4 text-sm font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-800 transition-colors";
+                contentPenerapan.classList.remove('hidden');
+                contentMakna.classList.add('hidden');
+            }
+        }
+
+        // Tutup modal jika klik di luar kotak modal atau menekan tombol Escape
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+        });
+
+        // 4. DATA & LOGIKA KUIS MINI INTERAKTIF
+        const quizQuestions = [
+            {
+                question: "Simbol pada perisai Garuda Pancasila yang melambangkan kebutuhan dasar manusia akan pangan dan sandang adalah...",
+                options: [
+                    "Pohon Beringin",
+                    "Padi dan Kapas",
+                    "Rantai Emas",
+                    "Bintang Tunggal"
+                ],
+                correctIndex: 1,
+                explanation: "Benar! Padi melambangkan pangan (makanan pokok) dan kapas melambangkan sandang (pakaian) sebagai simbol Sila ke-5."
+            },
+            {
+                question: "Pada simbol Rantai Emas (Sila ke-2), terdapat dua bentuk mata rantai yang saling berkaitan. Bentuk persegi melambangkan...",
+                options: [
+                    "Perempuan",
+                    "Anak-anak",
+                    "Laki-laki",
+                    "Pemimpin bangsa"
+                ],
+                correctIndex: 2,
+                explanation: "Tepat sekali! Mata rantai persegi melambangkan laki-laki dan mata rantai lingkaran melambangkan perempuan yang saling bahu-membahu."
+            },
+            {
+                question: "Mengapa Pohon Beringin dipilih menjadi simbol Sila ke-3 'Persatuan Indonesia'?",
+                options: [
+                    "Karena buahnya dapat dimakan seluruh rakyat",
+                    "Karena memiliki daun rindang sebagai tempat berteduh dan akar kuat yang menyatu",
+                    "Karena merupakan hewan sosial yang suka berkumpul",
+                    "Karena berwarna kuning emas yang bercahaya"
+                ],
+                correctIndex: 1,
+                explanation: "Benar! Pohon beringin yang besar dan rindang melambangkan Indonesia sebagai tempat berteduh seluruh rakyat yang beragam."
+            },
+            {
+                question: "Pemilihan ketua kelas melalui diskusi dan pemungutan suara bersama merupakan penerapan nilai Pancasila yang bersimbol...",
+                options: [
+                    "Kepala Banteng",
+                    "Bintang Tunggal",
+                    "Padi dan Kapas",
+                    "Pohon Beringin"
+                ],
+                correctIndex: 0,
+                explanation: "Hebat! Musyawarah untuk mufakat adalah nilai Sila ke-4 yang dilambangkan dengan Kepala Banteng."
+            },
+            {
+                question: "Warna latar belakang hitam pada simbol Bintang Tunggal (Sila ke-1) memiliki makna filosofis...",
+                options: [
+                    "Keberanian dalam membela kebenaran",
+                    "Kemakmuran yang merata di seluruh negeri",
+                    "Warna alam/asli yang menunjukkan Tuhan adalah sumber dari segala sesuatu",
+                    "Persatuan dari berbagai suku bangsa"
+                ],
+                correctIndex: 2,
+                explanation: "Sempurna! Latar hitam melambangkan warna alam atau warna asli bahwa Tuhan Yang Maha Esa adalah sumber dari segalanya."
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let hasAnswered = false;
+
+        function loadQuestion() {
+            hasAnswered = false;
+            const q = quizQuestions[currentQuestionIndex];
+            
+            document.getElementById('quiz-progress-text').textContent = `Pertanyaan ${currentQuestionIndex + 1} dari ${quizQuestions.length}`;
+            document.getElementById('quiz-progress-bar').style.width = `${((currentQuestionIndex + 1) / quizQuestions.length) * 100}%`;
+            document.getElementById('quiz-question').textContent = q.question;
+            
+            const feedbackEl = document.getElementById('quiz-feedback');
+            feedbackEl.classList.add('hidden');
+            document.getElementById('quiz-next-btn').classList.add('hidden');
+
+            const optionsContainer = document.getElementById('quiz-options');
+            optionsContainer.innerHTML = q.options.map((opt, idx) => `
+                <button onclick="selectAnswer(${idx})" id="opt-btn-${idx}"
+                    class="w-full text-left p-4 rounded-2xl bg-slate-900/70 border border-slate-700 hover:border-amber-400 hover:bg-slate-700/60 transition-all flex items-center gap-3.5 text-sm sm:text-base font-medium">
+                    <span class="w-8 h-8 rounded-lg bg-slate-800 border border-slate-600 flex items-center justify-center text-xs font-bold text-amber-400 shrink-0">
+                        ${String.fromCharCode(65 + idx)}
+                    </span>
+                    <span>${opt}</span>
+                </button>
+            `).join('');
+        }
+
+        function selectAnswer(selectedIndex) {
+            if (hasAnswered) return;
+            hasAnswered = true;
+
+            const q = quizQuestions[currentQuestionIndex];
+            const isCorrect = selectedIndex === q.correctIndex;
+            const feedbackEl = document.getElementById('quiz-feedback');
+
+            // Nonaktifkan semua tombol opsi & beri warna indikator
+            q.options.forEach((_, idx) => {
+                const btn = document.getElementById(`opt-btn-${idx}`);
+                btn.disabled = true;
+                btn.classList.remove('hover:border-amber-400', 'hover:bg-slate-700/60');
+                
+                if (idx === q.correctIndex) {
+                    btn.classList.remove('bg-slate-900/70', 'border-slate-700');
+                    btn.classList.add('bg-emerald-950/80', 'border-emerald-500', 'text-emerald-200');
+                } else if (idx === selectedIndex && !isCorrect) {
+                    btn.classList.remove('bg-slate-900/70', 'border-slate-700');
+                    btn.classList.add('bg-rose-950/80', 'border-rose-500', 'text-rose-200');
+                } else {
+                    btn.classList.add('opacity-50');
+                }
+            });
+
+            if (isCorrect) {
+                score += 20;
+                document.getElementById('live-score').textContent = score;
+                feedbackEl.className = "p-4 rounded-2xl mb-6 text-sm leading-relaxed bg-emerald-950/70 border border-emerald-500/50 text-emerald-200";
+                feedbackEl.innerHTML = `<strong class="text-emerald-400">✓ Jawaban Tepat!</strong> ${q.explanation}`;
+            } else {
+                feedbackEl.className = "p-4 rounded-2xl mb-6 text-sm leading-relaxed bg-rose-950/70 border border-rose-500/50 text-rose-200";
+                feedbackEl.innerHTML = `<strong class="text-rose-400">✕ Kurang Tepat.</strong> ${q.explanation}`;
+            }
+
+            feedbackEl.classList.remove('hidden');
+
+            const nextBtn = document.getElementById('quiz-next-btn');
+            nextBtn.textContent = currentQuestionIndex === quizQuestions.length - 1 ? "Lihat Skor Akhir 🏆" : "Pertanyaan Selanjutnya →";
+            nextBtn.classList.remove('hidden');
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < quizQuestions.length) {
+                loadQuestion();
+            } else {
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            document.getElementById('quiz-active-view').classList.add('hidden');
+            const resultView = document.getElementById('quiz-result-view');
+            resultView.classList.remove('hidden');
+
+            document.getElementById('final-score').textContent = score;
+            const emojiEl = document.getElementById('result-emoji');
+            const msgEl = document.getElementById('result-message');
+
+            if (score === 100) {
+                emojiEl.textContent = "🏆";
+                msgEl.textContent = "Luar biasa! Kamu menguasai seluruh materi Simbol-Simbol Pancasila dan maknanya dengan sempurna!";
+            } else if (score >= 60) {
+                emojiEl.textContent = "👏";
+                msgEl.textContent = "Bagus sekali! Pemahamanmu sudah baik. Baca kembali detail kartu sila di atas untuk meraih skor 100!";
+            } else {
+                emojiEl.textContent = "📚";
+                msgEl.textContent = "Tetap semangat belajar! Yuk baca kembali kartu-kartu 5 Sila di atas lalu coba ulangi kuisnya.";
+            }
+        }
+
+        function restartQuiz() {
+            currentQuestionIndex = 0;
+            score = 0;
+            document.getElementById('live-score').textContent = '0';
+            document.getElementById('quiz-result-view').classList.add('hidden');
+            document.getElementById('quiz-active-view').classList.remove('hidden');
+            loadQuestion();
+        }
+
+        // Inisialisasi Halaman
+        window.addEventListener('DOMContentLoaded', () => {
+            renderSilaCards();
+            loadQuestion();
+        });
+    </script>
+</body>
+</html>
+
